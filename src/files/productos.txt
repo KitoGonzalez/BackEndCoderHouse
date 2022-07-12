@@ -1,0 +1,20 @@
+[
+	{
+		"title": "Escuadra",
+		"price": 123.45,
+		"description":"Escuadra Verde Exagonal",
+		"id": 1
+	},
+	{
+		"title": "Calculadora",
+		"price": 234.56,
+		"description":"Calculadora MagicResult",
+		"id": 2
+	},
+	{
+		"title": "Globo Terráqueo",
+		"price": 345.67,
+		"description":"Globo Terraqueo Portatil tactil inalambrico",
+		"id": 3
+	}
+]
