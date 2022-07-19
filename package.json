@@ -1,16 +1,17 @@
 {
-  "name": "03-servidorexpress",
-  "version": "1.0.1",
-  "description": "Desafio 03 - Servidor Express : CoderHouse",
-  "main": "server.js",
+  "name": "servidor1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Joaquin Gonzalez",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3",
-    "moment": "^2.29.2"
+    "express": "^4.18.1",
+    "multer": "^1.4.5-lts.1"
   }
 }
