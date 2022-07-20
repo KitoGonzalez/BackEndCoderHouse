@@ -1,17 +1,16 @@
-import express from 'express';
-import productRouter from './routes/products.router.js';
-import petsRouter from './routes/pets.router.js'
-const app = express();
+import express from 'express'
+import productosRouter from './routers/productos.router.js'
 
-const server = app.listen(8080,()=>console.log("Now listening on 8080"))
-
+const app = express()
+const PORT = 8080;
 
 
-app.use(express.json());
-app.use('/api/products',productRouter);
-app.use('/pets',petsRouter);
-app.use(express.static('public'));
-
+const server = app.listen(PORT,()=>{
+    console.log(`Èscuchando en el puerto ${PORT}`)
+})
+app.use(express.json())
+app.use('/api/productos',productosRouter);
+app.use(express.static('public'))
 
 
 

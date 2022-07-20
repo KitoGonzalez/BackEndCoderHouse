@@ -1,0 +1,41 @@
+body{
+    text-align: center;
+    background-color: rgb(97, 11, 11);
+}
+h1{
+    background-color: rgb(17, 16, 15);
+    color: rgb(240, 240, 240);
+    
+    text-align: center;
+    padding: 2%
+}
+
+form{
+    margin: 0 auto;
+    background-color: rgb(198, 216, 216);
+    width: 380px;
+    text-align: center;
+}
+
+h2{
+    background-color: rgb(15, 9, 65);
+    color: aliceblue;
+    margin: 0 auto;
+    width: 350px;
+    padding: 1%;
+}
+
+label{
+    margin: 10px;
+}
+
+input {
+    width: 280px;
+    padding: 2%;
+}
+
+button{
+    width: 280px;
+    padding: 2%;
+    background-color: rgb(29, 228, 118);
+}

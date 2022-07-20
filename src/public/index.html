@@ -1,38 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"> 
+<head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Api Rest Full</title>
+    <title>Productos</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>Api Rest Full - CoderHouse</h1>
-    <h5>Formulario de Mascotas</h5>
-    <form id="petForm">
-       <label>Nombre</label>
-       <input type="text" name="name">
-        <label>Especie</label>
-        <input type="text" name="especie">
-        <br>
-        <label>Adjuntar una Imagen</label>
-        <input type="file" name="file">
-        <br>
+    <h1>Hola, si desea ver su ultimo producto agregado con su id asignado valla<a href="http://localhost:8080/api/productos/"> aqui</a></h1>
+    <h2>Agregar Producto</h2>
+    <form id="productosForm">
+        <label><br>Title<br></label>
+        <input name="title"required>
+        <label><br>Prices<br></label>
+        <input name="prices"required>
+        <label><br>Thumbnail<br></label>
+        <input name="thumbnail" required><br>
+        <input type="submit">
+    </form>
+    <h2>Funciones</h2>
+    <form action="http://localhost:8080/api/productos/id" method="get">
+        <label><br>Buscar producto con id :</label>
+        <input type = "number" name="id"required>
+        <br><button>Buscar id</button>
+    </form>
+
+    <form id="deleteForm">
+        <label><br>Borrar por id:</label>
+        <input type = "number" name="delete"required><br>
+        <input type="submit">
+    </form>
+    <h2>Actualizar producto</h2>
+    <form id="actualizarForm">
+        <label><br>Id del producto que quieres actualizar<br></label>
+        <input type = "number" name="id"required>
+        <label><br>Title<br></label>
+        <input name="title"required>
+        <label><br>Prices<br></label>
+        <input name="prices"required>
+        <label><br>Thumbnail<br></label>
+        <input name="thumbnail"required><br>
         <input type="submit">
     </form>
 
-    <h5>Formulario de Objetos</h5>
-    <form id="objForm">
-       <label>Nombre</label>
-       <input type="text" name="name">
-        <label>Precio</label>
-        <input type="number" name="precio">
-        <br>
-        <label>Adjuntar una Imagen</label>
-        <input type="file" name="file">
-        <br>
-        <input type="submit">
-    </form>
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
